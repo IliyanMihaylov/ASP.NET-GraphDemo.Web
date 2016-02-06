@@ -3,11 +3,11 @@ Application using Google plus, Facebook, Google Drive and Neo4j api.
 
 #Getting Started
       1 - In Web.config change GraphDemoDatabase connection string.
-      2 - Start Neo4j database and configurate connection settings in Properties->Settings.
+      2 - Start Neo4j database and configure connection settings in Properties->Settings.
       3 - Now you are ready to start the project.
 </br>
 #Sign in
-Upon entry through social network in the database are recorded your details and each time you will be entered automatically. </br>
+Upon login with social network, your connection details are stored in the database. In that way you will be logged in automatically. </br>
 To proceed you must have a google drive account.</br>
 </br>
 #Google Drive
@@ -21,10 +21,9 @@ MERGE (Tarnovo: Location { Name: 'Tarnovo' })</br>
 MERGE (Plovdiv: Location { Name: 'Plovdiv' })</br>
 MERGE (StaraZagora: Location { Name: 'StaraZagora' })</br>
 </br>
-MERGE (Sofia)<-[:CONNECTED_TO { distance: 1 }]->(Sevlievo)</br>
-MERGE (Sevlievo)<-[:CONNECTED_TO { distance: 1 }]->(Tarnovo)</br>
-MERGE (Tarnovo)<-[:CONNECTED_TO { distance: 1 }]->(Gabrovo)</br>
-MERGE (Gabrovo)<-[:CONNECTED_TO { distance: 1 }]->(Varna)</br>
-MERGE (Sofia)<-[:CONNECTED_TO { distance: 1 }]->(Plovdiv)</br>
-MERGE (Plovdiv)<-[:CONNECTED_TO { distance: 1 }]->(StaraZagora)</br>
-MERGE (StaraZagora)<-[:CONNECTED_TO { distance: 1 }]->(Varna)</br>
+MERGE (Sofia)<-[:CONNECTED_TO]->(Sevlievo)</br>
+MERGE (Sevlievo)<-[:CONNECTED_TO]->(Tarnovo)</br>
+MERGE (Tarnovo)<-[:CONNECTED_TO]->(Gabrovo)
+MERGE (Gabrovo)<-[:CONNECTED_TO]->(Varna)</br>
+MERGE (Sofia)<-[:CONNECTED_TO]->(Plovdiv)</br>
+MERGE (StaraZagora)<-[:CONNECTED_TO]->(Varna)</br>

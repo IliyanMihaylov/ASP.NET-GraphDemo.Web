@@ -36,7 +36,7 @@ namespace GraphDemo.Web.Controllers.Neo4j
                     .Merge(createQuery)
                     .ExecuteWithoutResults();
 
-                string linkQuery = $"({name})<-[:CONNECTED_TO {{ distance: 1 }}]->({link})";
+                string linkQuery = $"({name})<-[:CONNECTED_TO]->({link})";
                 WebApiConfig.GraphClient.Cypher
                    .Match($"({name}:Location {{ Name:'{name}' }}), ({link}:Location {{ Name:'{link}' }})")
                    .Merge(linkQuery)

@@ -23,7 +23,7 @@ MERGE (StaraZagora: Location { Name: 'StaraZagora' })</br>
 </br>
 MERGE (Sofia)<-[:CONNECTED_TO]->(Sevlievo)</br>
 MERGE (Sevlievo)<-[:CONNECTED_TO]->(Tarnovo)</br>
-MERGE (Tarnovo)<-[:CONNECTED_TO]->(Gabrovo)
+MERGE (Tarnovo)<-[:CONNECTED_TO]->(Gabrovo)</br>
 MERGE (Gabrovo)<-[:CONNECTED_TO]->(Varna)</br>
 MERGE (Sofia)<-[:CONNECTED_TO]->(Plovdiv)</br>
 MERGE (StaraZagora)<-[:CONNECTED_TO]->(Varna)</br>

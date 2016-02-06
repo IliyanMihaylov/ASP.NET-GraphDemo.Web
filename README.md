@@ -2,9 +2,9 @@
 Application using Google plus, Facebook, Google Drive and Neo4j api.
 
 #Getting Started
-      1 - In Web.confg change GraphDemoDatabase connection string. </br>
-      2 - Start Neo4j database and configurate connection settings in Properties->Settings. </br>
-      3 - Now you are ready to start the project.</br>
+      1 - In Web.confg change GraphDemoDatabase connection string.
+      2 - Start Neo4j database and configurate connection settings in Properties->Settings.
+      3 - Now you are ready to start the project.
 </br>
 #Sign in
 Upon entry through social network in the database are recorded your details and each time you will be entered automatically. </br>

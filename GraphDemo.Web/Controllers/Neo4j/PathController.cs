@@ -39,8 +39,7 @@ namespace GraphDemo.Web.Controllers.Neo4j
                      {
                          Nodes = Return.As<IEnumerable<Node<NodeModel>>>("nodes(p)"),
                          Relationships = Return.As<IEnumerable<RelationshipInstance<object>>>("rels(p)")
-                     })
-                     .Limit(1);
+                     }).Limit(1);
 
             PathsResult<NodeModel> res = pathsQuery.Results.FirstOrDefault();
 

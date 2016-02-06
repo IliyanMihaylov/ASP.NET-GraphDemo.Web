@@ -2,7 +2,7 @@
 Application using Google plus, Facebook, Google Drive and Neo4j api.
 
 #Getting Started
-      1 - In Web.confg change GraphDemoDatabase connection string.
+      1 - In Web.config change GraphDemoDatabase connection string.
       2 - Start Neo4j database and configurate connection settings in Properties->Settings.
       3 - Now you are ready to start the project.
 </br>

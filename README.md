@@ -13,18 +13,18 @@ To proceed you must have a google drive account.</br>
 #Google Drive
 In Google Drive you must have a file with extension ".cypher" in specific file format: </br>
 ###### File Format - Query.cypher
-MERGE (Sofia: Location { Name: 'Sofia' }) 
-MERGE (Varna: Location { Name: 'Varna' }) 
-MERGE (Gabrovo: Location { Name: 'Gabrovo' })
-MERGE (Sevlievo: Location { Name: 'Sevlievo' })
-MERGE (Tarnovo: Location { Name: 'Tarnovo' })
-MERGE (Plovdiv: Location { Name: 'Plovdiv' })
-MERGE (StaraZagora: Location { Name: 'StaraZagora' })
-
-MERGE (Sofia)<-[:CONNECTED_TO { distance: 1 }]->(Sevlievo)
-MERGE (Sevlievo)<-[:CONNECTED_TO { distance: 1 }]->(Tarnovo)
-MERGE (Tarnovo)<-[:CONNECTED_TO { distance: 1 }]->(Gabrovo)
-MERGE (Gabrovo)<-[:CONNECTED_TO { distance: 1 }]->(Varna)
-MERGE (Sofia)<-[:CONNECTED_TO { distance: 1 }]->(Plovdiv)
-MERGE (Plovdiv)<-[:CONNECTED_TO { distance: 1 }]->(StaraZagora)
-MERGE (StaraZagora)<-[:CONNECTED_TO { distance: 1 }]->(Varna)
+MERGE (Sofia: Location { Name: 'Sofia' }) </br>
+MERGE (Varna: Location { Name: 'Varna' }) </br>
+MERGE (Gabrovo: Location { Name: 'Gabrovo' })</br>
+MERGE (Sevlievo: Location { Name: 'Sevlievo' })</br>
+MERGE (Tarnovo: Location { Name: 'Tarnovo' })</br>
+MERGE (Plovdiv: Location { Name: 'Plovdiv' })</br>
+MERGE (StaraZagora: Location { Name: 'StaraZagora' })</br>
+</br>
+MERGE (Sofia)<-[:CONNECTED_TO { distance: 1 }]->(Sevlievo)</br>
+MERGE (Sevlievo)<-[:CONNECTED_TO { distance: 1 }]->(Tarnovo)</br>
+MERGE (Tarnovo)<-[:CONNECTED_TO { distance: 1 }]->(Gabrovo)</br>
+MERGE (Gabrovo)<-[:CONNECTED_TO { distance: 1 }]->(Varna)</br>
+MERGE (Sofia)<-[:CONNECTED_TO { distance: 1 }]->(Plovdiv)</br>
+MERGE (Plovdiv)<-[:CONNECTED_TO { distance: 1 }]->(StaraZagora)</br>
+MERGE (StaraZagora)<-[:CONNECTED_TO { distance: 1 }]->(Varna)</br>
